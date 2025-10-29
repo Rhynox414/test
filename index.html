@@ -3,19 +3,20 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Rhyno's Cafe | Premium Coffee Experience</title>
+    <title>Rhyno's Cafe | Artisanal Coffee Experience</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <style>
-        /* Color Variables from Screenshot */
+        /* Color Variables from Inspiration Image */
         :root {
-            --dark-brown: #2A211C;
-            --medium-brown: #4A3C32;
-            --light-brown: #8B7355;
-            --cream: #F5F1E8;
-            --accent: #C8A27A;
-            --text-dark: #2A211C;
-            --text-light: #F5F1E8;
-            --shadow: 0 4px 12px rgba(42, 33, 28, 0.15);
+            --dark-brown: #3A2E28;
+            --medium-brown: #6D5D54;
+            --light-brown: #A68A7E;
+            --cream: #E8D8C9;
+            --sage-green: #8A9B6E;
+            --dark-green: #5A6B47;
+            --text-dark: #2C2724;
+            --text-light: #F8F4F0;
+            --shadow: 0 4px 12px rgba(58, 46, 40, 0.15);
             --transition: all 0.3s ease;
         }
 
@@ -75,7 +76,7 @@
             transform: translateX(-50%);
             width: 80px;
             height: 3px;
-            background-color: var(--accent);
+            background-color: var(--sage-green);
         }
 
         p {
@@ -86,7 +87,7 @@
         .btn {
             display: inline-block;
             padding: 12px 30px;
-            background-color: var(--accent);
+            background-color: var(--sage-green);
             color: var(--text-light);
             border: none;
             border-radius: 30px;
@@ -99,18 +100,18 @@
         }
 
         .btn:hover {
-            background-color: var(--light-brown);
+            background-color: var(--dark-green);
             transform: translateY(-3px);
         }
 
         .btn-secondary {
             background-color: transparent;
-            border: 2px solid var(--accent);
-            color: var(--accent);
+            border: 2px solid var(--sage-green);
+            color: var(--sage-green);
         }
 
         .btn-secondary:hover {
-            background-color: var(--accent);
+            background-color: var(--sage-green);
             color: var(--text-light);
         }
 
@@ -121,7 +122,7 @@
             left: 0;
             width: 100%;
             z-index: 1000;
-            background-color: var(--cream);
+            background-color: rgba(232, 216, 201, 0.95);
             box-shadow: var(--shadow);
             transition: var(--transition);
         }
@@ -146,7 +147,7 @@
         }
 
         .logo span {
-            color: var(--accent);
+            color: var(--sage-green);
         }
 
         .nav-links {
@@ -167,7 +168,7 @@
         }
 
         .nav-links a:hover {
-            color: var(--accent);
+            color: var(--sage-green);
         }
 
         .nav-links a:after {
@@ -177,7 +178,7 @@
             left: 0;
             width: 0;
             height: 2px;
-            background-color: var(--accent);
+            background-color: var(--sage-green);
             transition: var(--transition);
         }
 
@@ -195,36 +196,28 @@
         /* Hero Section */
         .hero {
             height: 100vh;
-            background: linear-gradient(rgba(42, 33, 28, 0.7), rgba(42, 33, 28, 0.7)), url('https://images.unsplash.com/photo-1509042239860-f550ce710b93?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1200&q=80') no-repeat center center/cover;
+            background: linear-gradient(rgba(58, 46, 40, 0.6), rgba(58, 46, 40, 0.6)), url('https://images.unsplash.com/photo-1509042239860-f550ce710b93?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1200&q=80') no-repeat center center/cover;
             display: flex;
             align-items: center;
-            text-align: left;
+            text-align: center;
             color: var(--text-light);
         }
 
         .hero-content {
             max-width: 800px;
+            margin: 0 auto;
         }
 
         .hero h1 {
             color: var(--text-light);
             margin-bottom: 20px;
             font-size: 4rem;
-            line-height: 1.1;
-        }
-
-        .hero h1 span {
-            display: block;
-            font-size: 5rem;
-            font-weight: 700;
-            margin-top: 10px;
         }
 
         .hero p {
             font-size: 1.2rem;
             margin-bottom: 30px;
             color: var(--cream);
-            max-width: 600px;
         }
 
         /* About Section */
@@ -262,7 +255,7 @@
 
         /* Menu Section */
         .menu {
-            background-color: var(--medium-brown);
+            background-color: var(--light-brown);
             color: var(--text-light);
         }
 
@@ -271,7 +264,7 @@
         }
 
         .menu h2:after {
-            background-color: var(--accent);
+            background-color: var(--cream);
         }
 
         .menu-categories {
@@ -285,17 +278,17 @@
             padding: 10px 20px;
             margin: 0 10px 10px;
             background-color: transparent;
-            border: 2px solid var(--accent);
+            border: 2px solid var(--cream);
             border-radius: 30px;
-            color: var(--accent);
+            color: var(--cream);
             cursor: pointer;
             transition: var(--transition);
             font-weight: 500;
         }
 
         .category-btn.active, .category-btn:hover {
-            background-color: var(--accent);
-            color: var(--text-light);
+            background-color: var(--cream);
+            color: var(--dark-brown);
         }
 
         .menu-items {
@@ -349,7 +342,7 @@
         }
 
         .price {
-            color: var(--accent);
+            color: var(--sage-green);
             font-weight: 700;
         }
 
@@ -389,7 +382,7 @@
             left: 0;
             width: 100%;
             height: 100%;
-            background-color: rgba(42, 33, 28, 0.7);
+            background-color: rgba(58, 46, 40, 0.7);
             display: flex;
             align-items: center;
             justify-content: center;
@@ -408,7 +401,7 @@
 
         /* Testimonials Section */
         .testimonials {
-            background-color: var(--light-brown);
+            background-color: var(--medium-brown);
             color: var(--text-light);
         }
 
@@ -417,7 +410,7 @@
         }
 
         .testimonials h2:after {
-            background-color: var(--accent);
+            background-color: var(--sage-green);
         }
 
         .testimonials-container {
@@ -453,7 +446,7 @@
             border-radius: 50%;
             overflow: hidden;
             margin-right: 15px;
-            border: 3px solid var(--accent);
+            border: 3px solid var(--sage-green);
         }
 
         .author-img img {
@@ -469,7 +462,7 @@
 
         .author-info p {
             margin-bottom: 0;
-            color: var(--accent);
+            color: var(--sage-green);
         }
 
         /* Events Section */
@@ -484,7 +477,7 @@
         }
 
         .event-card {
-            background-color: var(--medium-brown);
+            background-color: var(--light-brown);
             border-radius: 10px;
             overflow: hidden;
             box-shadow: var(--shadow);
@@ -518,7 +511,7 @@
 
         .event-date {
             display: inline-block;
-            background-color: var(--accent);
+            background-color: var(--sage-green);
             color: var(--text-light);
             padding: 5px 15px;
             border-radius: 30px;
@@ -532,7 +525,7 @@
 
         /* Contact Section */
         .contact {
-            background-color: var(--dark-brown);
+            background-color: var(--medium-brown);
             color: var(--text-light);
         }
 
@@ -541,7 +534,7 @@
         }
 
         .contact h2:after {
-            background-color: var(--accent);
+            background-color: var(--sage-green);
         }
 
         .contact-container {
@@ -561,7 +554,7 @@
         .contact-icon {
             width: 60px;
             height: 60px;
-            background-color: var(--accent);
+            background-color: var(--sage-green);
             color: var(--text-light);
             border-radius: 50%;
             display: flex;
@@ -599,7 +592,7 @@
         }
 
         .form-control:focus {
-            border-color: var(--accent);
+            border-color: var(--sage-green);
             outline: none;
         }
 
@@ -635,7 +628,7 @@
             left: 0;
             width: 50px;
             height: 2px;
-            background-color: var(--accent);
+            background-color: var(--sage-green);
         }
 
         .footer-links {
@@ -653,7 +646,7 @@
         }
 
         .footer-links a:hover {
-            color: var(--accent);
+            color: var(--sage-green);
             padding-left: 5px;
         }
 
@@ -676,7 +669,7 @@
         }
 
         .social-links a:hover {
-            background-color: var(--accent);
+            background-color: var(--sage-green);
             transform: translateY(-5px);
         }
 
@@ -693,7 +686,7 @@
             right: 30px;
             width: 50px;
             height: 50px;
-            background-color: var(--accent);
+            background-color: var(--sage-green);
             color: var(--text-light);
             border-radius: 50%;
             display: flex;
@@ -714,7 +707,7 @@
         }
 
         .back-to-top:hover {
-            background-color: var(--light-brown);
+            background-color: var(--dark-green);
             transform: translateY(-5px);
         }
 
@@ -772,10 +765,6 @@
                 font-size: 2.5rem;
             }
             
-            .hero h1 span {
-                font-size: 3.5rem;
-            }
-            
             .hero p {
                 font-size: 1rem;
             }
@@ -808,10 +797,12 @@
                 <a href="#" class="logo">Rhyno's <span>Cafe</span></a>
                 <ul class="nav-links">
                     <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
                     <li><a href="#menu">Menu</a></li>
-                    <li><a href="#blog">Blog</a></li>
-                    <li><a href="#about">About us</a></li>
-                    <li><a href="#signin" class="btn-secondary">Sign In</a></li>
+                    <li><a href="#gallery">Gallery</a></li>
+                    <li><a href="#testimonials">Testimonials</a></li>
+                    <li><a href="#events">Events</a></li>
+                    <li><a href="#contact">Contact</a></li>
                 </ul>
                 <div class="mobile-menu">
                     <i class="fas fa-bars"></i>
@@ -824,8 +815,8 @@
     <section class="hero" id="home">
         <div class="container">
             <div class="hero-content">
-                <h1>The Best <span>Coffee</span> For You</h1>
-                <p>Experience the perfect blend of rich flavors, cozy ambiance, and warm hospitality at Rhyno's Cafe. We serve premium coffee crafted with passion and precision.</p>
+                <h1>Artisanal Coffee & Culinary Delights</h1>
+                <p>Experience the perfect blend of rich flavors, cozy ambiance, and warm hospitality at Rhyno's Cafe</p>
                 <a href="#menu" class="btn">Explore Our Menu</a>
                 <a href="#contact" class="btn btn-secondary">Visit Us</a>
             </div>
@@ -1177,10 +1168,10 @@
                     <h3>Quick Links</h3>
                     <ul class="footer-links">
                         <li><a href="#home">Home</a></li>
-                        <li><a href="#menu">Menu</a></li>
-                        <li><a href="#blog">Blog</a></li>
                         <li><a href="#about">About Us</a></li>
-                        <li><a href="#contact">Contact</a></li>
+                        <li><a href="#menu">Menu</a></li>
+                        <li><a href="#gallery">Gallery</a></li>
+                        <li><a href="#events">Events</a></li>
                     </ul>
                 </div>
                 <div class="footer-column">
